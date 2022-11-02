@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/Sam-C-F/Average-Webpage/issues"
   },
-  "homepage": "https://github.com/Sam-C-F/Average-Webpage#readme",
-  "devDependencies": {
-    "jest": "^29.2.2"
-  }
+  "homepage": "https://github.com/Sam-C-F/Average-Webpage#readme"
 }
