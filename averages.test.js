@@ -31,4 +31,12 @@ describe("takes a series of numbers and outputs the mean, median and mode", () =
       [],
     ]);
   });
+  it("should return an error if not provided with numbers", () => {
+    expect(averageOfSeries("a", "b", "c")).toBe(
+      "Please provide a series of numbers only"
+    );
+    expect(averageOfSeries(1, 4, 6.7, "j")).toBe(
+      "Please provide a series of numbers only"
+    );
+  });
 });

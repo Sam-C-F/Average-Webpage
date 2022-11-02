@@ -5,6 +5,10 @@ exports.averageOfSeries = (...nums) => {
   orderedSeries.forEach((number) => (totalOfSeries += number));
   const mean = totalOfSeries / orderedSeries.length;
 
+  if (isNaN(mean) || typeof mean !== "number") {
+    return "Please provide a series of numbers only";
+  }
+
   let median = 0;
   if (!orderedSeries.length % 2 === 0) {
     median = orderedSeries[Math.floor(orderedSeries.length / 2)];
