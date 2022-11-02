@@ -1,5 +1,5 @@
 import "./App.css";
-import EnterSeries from "./components/Content";
+import EnterSeries from "./components/EnterSeries";
 import Header from "./components/Header";
 
 function App() {

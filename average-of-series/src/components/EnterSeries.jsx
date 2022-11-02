@@ -1,11 +1,13 @@
 import { useState } from "react";
+import Averages from "./Averages";
+import Reset from "./Reset";
 
 const EnterSeries = () => {
   const [number, setNumber] = useState("");
   const [series, setSeries] = useState([]);
 
   const handleOnChange = (e) => {
-    setNumber(e.target.value);
+    setNumber(parseInt(e.target.value));
   };
 
   const handleOnSubmit = (e) => {
@@ -34,6 +36,12 @@ const EnterSeries = () => {
       <br />
       <h2>Your series so far:</h2>
       <section>{`${series}`}</section>
+      <br />
+      <hr />
+      <Averages series={series} />
+      <br />
+      <br />
+      <Reset setSeries={setSeries} />
     </section>
   );
 };
