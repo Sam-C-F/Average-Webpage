@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.series {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  list-style: none;
+  text-align: center;
+  margin: 10px;
+}
+
+.series li {
+  padding-right: 5px;
+  flex-direction: row;
+  border: 0.3vw;
+  padding: 3px;
+  border-style: inset;
+  border-radius: 10%;
+}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Averages from "./Averages";
 import Reset from "./Reset";
+import Series from "./Series";
 
 const EnterSeries = () => {
   const [number, setNumber] = useState("");
@@ -35,7 +36,7 @@ const EnterSeries = () => {
       </form>{" "}
       <br />
       <h2>Your series so far:</h2>
-      <section>{`${series}`}</section>
+      <Series series={series} />
       <br />
       <hr />
       <Averages series={series} />
