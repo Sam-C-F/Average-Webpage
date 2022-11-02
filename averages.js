@@ -1,5 +1,5 @@
 exports.averageOfSeries = (...nums) => {
-  const orderedSeries = [...nums];
+  const orderedSeries = [...nums].sort((a, b) => a - b);
 
   let totalOfSeries = 0;
   orderedSeries.forEach((number) => (totalOfSeries += number));
@@ -30,6 +30,9 @@ exports.averageOfSeries = (...nums) => {
     } else if (count === max) {
       modes.push(parseInt(number));
     }
+  }
+  if (modes.length === Object.keys(numberFrequency).length) {
+    modes = [];
   }
 
   return [mean, median, modes];
