@@ -31,6 +31,7 @@ const EnterSeries = () => {
           onChange={(e) => {
             handleOnChange(e);
           }}
+          required
         />
         <button type="Submit">Submit</button>
       </form>{" "}
